@@ -1,0 +1,43 @@
+
+
+{% extends 'layout.html' %}
+{% block content %}
+< class="contact-info">
+  <div class="hours-of-operation">
+    <h3>Hours of Operation</h3>
+    <p>Monday - Thursday: 9:00 PM - 2:00 AM</p>
+    <p>Friday - Saturday: 9:00 PM - 3:00 AM</p>
+    <p>Sunday: 9:00 PM - 1:00 AM</p>
+  </div>
+  <div class="contact-details">
+    <h3>Contact</h3>
+    <p>Jupiter Night Club</p>
+    <p>123 Main Street</p>
+    <p>Miami, FL 33069</p>
+
+    <h3>Phone Number</h3>
+    <p>(123) 456-7890</p>
+  </div>
+<div class="centerimage">
+<img src="{{ url_for('static', filename='images/picture11.jpg')}}"width="900" height="700" style="resolution: 72dpi;">
+</div>
+
+
+<style>
+  .centerimage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* adjust this to the desired height */
+  }
+  .centerimage img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+</style>
+
+{% endblock %}
+{% block footer %}
+    <p>Copyright © 2023 Jupiter Night Club</p>
+{% endblock %}
+

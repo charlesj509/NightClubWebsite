@@ -1,0 +1,39 @@
+<!-- templates/layout.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jupiter Night Club</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="{{ url_for('index') }}">Home</a>
+            <a href="{{ url_for('about') }}">About Us</a>
+
+            <a href="{{ url_for('contact') }}">Contact Us</a>
+
+
+        </nav>
+    </header>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+    <!-- templates/layout.html -->
+<footer>
+    {% block footer %}
+    <footer>
+    <p style="text-align: center;">Copyright © 2021 Jupiter Night Club</p>
+    <footer>
+
+
+    {% endblock %}
+
+
+</body>
+
+
+</html>

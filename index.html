@@ -1,0 +1,19 @@
+<!-- templates/index.html -->
+{% extends 'layout.html' %}
+{% block content %}
+    <h1>Welcome to Jupiter Night Club</h1>
+
+<img src="{{ url_for('static', filename='images/picture1.jpg')}}"width="500" height="300" style="resolution: 72dpi;">
+<img src="{{ url_for('static', filename='images/picture3.jpg')}}"width="500" height="300" style="resolution: 72dpi;">
+<img src="{{ url_for('static', filename='images/picture4.jpg')}}"width="500" height="300" style="resolution: 72dpi;">
+<img src="{{ url_for('static', filename='images/picture5.jpg')}}"width="500" height="300" style="resolution: 72dpi;">
+
+<img src="{{ url_for('static', filename='images/picture12.jpg')}}" class="picclass" width="500" height="300" style="resolution: 72dpi;">
+<img src="{{ url_for('static', filename='images/picture15.jpg')}}" class="picclass2" width="500" height="300" style="resolution: 72dpi;">
+
+
+
+{% endblock %}
+{% block footer %}
+    <p>Copyright © 2023 Jupiter Night Club</p>
+{% endblock %}
